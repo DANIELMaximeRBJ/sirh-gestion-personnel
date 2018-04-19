@@ -14,7 +14,7 @@ public class ListerCollaborateursController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// A ajouter
 		req.setAttribute("listeNoms", Arrays.asList("Robert", "Jean", "Hugues"));
-		req.getRequestDispatcher("/WEB-INF/views/collab/listerCollaborateurs.jsp").forward(req, resp);
+		req.getRequestDispatcher("/views/collab/listerCollaborateurs.jsp").forward(req, resp);
 	}
 
 }
