@@ -41,12 +41,13 @@
 			nouveau collaborateur</a>
 	</div>
 
-	<form class="ml-4">
-		<div class="form-group row">
-			<label for="inputPassword" class="col-sd-auto col-form-label ">recherche
+	<form class="ml-4" method="get"
+		action="http://localhost:8080/sgp/collaborateurs/rechercher">
+		<div class="form-group row ">
+			<label for="textnom" class="col-sd-auto col-form-label " >recherche
 				un nom ou prenom qui commence par:</label>
 			<div class="col-sm-3">
-				<input class="form-control" type="text">
+				<input class="form-control" type="text" name="textnom">
 			</div>
 			<button type="button" class="btn btn-primary">Rechercher</button>
 			<div class="form-check">
@@ -101,6 +102,8 @@ for(int i =0; i < Constantes.COLLAB_SERVICE.listerCollaborateurs().size(); i++){
 
 
 	</div>
-	<script src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.js"></script>
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js" ></script>
 </body>
 </html>

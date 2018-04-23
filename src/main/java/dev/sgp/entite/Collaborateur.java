@@ -13,6 +13,7 @@ public class Collaborateur  {
 	private String emailpro;
 	private String photo;
 	private ZonedDateTime dateHeureCreation;
+	private Departement departement;
 	
 	public Collaborateur(String matricule,String nom,String prenom,LocalDate naissance,String adresse,String securite,String emailpro,String photo,ZonedDateTime dateHeureCreation){
 		this.adresse = adresse;
@@ -25,6 +26,25 @@ public class Collaborateur  {
 		this.prenom =prenom;
 		this.securite = securite;	
 	}
+	
+	
+
+	public Collaborateur(String matricule, String nom, String prenom, LocalDate naissance, String adresse,
+			String securite, String emailpro, String photo, ZonedDateTime dateHeureCreation, Departement departement) {
+		super();
+		this.matricule = matricule;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.naissance = naissance;
+		this.adresse = adresse;
+		this.securite = securite;
+		this.emailpro = emailpro;
+		this.photo = photo;
+		this.dateHeureCreation = dateHeureCreation;
+		this.departement = departement;
+	}
+
+
 
 	public String getMatricule() {
 		return matricule;
